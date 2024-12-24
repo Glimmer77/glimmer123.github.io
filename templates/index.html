@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>打砖块</title>
+    <style>
+        * { padding: 0; margin: 0; }
+        body { font-family: Arial, sans-serif; }
+        #scoresHistory div { margin-bottom: 5px; }
+    </style>
+</head>
+<body>
+    <input type="text" id="usernameInput" placeholder="输入用户名">
+    <button id="createButton">注册</button>
+    <button id="loginButton">登录</button>
+    <div id="playerInfo"></div>
+    <div id="scoresHistory"></div>
+    <script src="{{ url_for('static', filename='phaser.min.js') }}"></script>  
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+</body>
+</html>

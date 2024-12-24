@@ -1,0 +1,44 @@
+/* styles.css */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+#header {
+    display: flex;
+    justify-content: flex-start; /* 水平排列元素 */
+    align-items: center;
+    gap: 20px;  /* 添加间距，避免重叠 */
+    margin-top: 20px;  /* 页面顶部的间距 */
+}
+
+#username {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#scoresHistory {
+    font-size: 18px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+#gameContainer {
+    position: relative;
+    width: 800px;
+    height: 600px;
+}
+
+canvas {
+    display: block;
+    margin: 0 auto;
+    background-color: #eee;
+}
