@@ -6,7 +6,7 @@ colorama==0.4.6
 comm==0.2.2
 contourpy==1.2.1
 cycler==0.12.1
-debugpy==1.8.1
+debugpy==1.8.1  # 可以删除，如果不需要调试功能
 decorator==5.1.1
 dnspython==2.7.0
 executing==2.0.1
@@ -40,10 +40,10 @@ neomodel==5.3.3
 nest-asyncio==1.6.0
 networkx==3.4.2
 numba==0.60.0
-numpy==2.0.0
+numpy==1.24.3  # 修改为稳定版本
 opencv-python==4.10.0.84
 packaging==24.1
-pandas==2.2.2
+pandas==2.2.2  # 考虑回退为 1.x.x 稳定版本
 parso==0.8.4
 pillow==10.3.0
 platformdirs==4.2.2
@@ -56,7 +56,6 @@ pymongo==4.10.1
 pyparsing==3.1.2
 python-dateutil==2.9.0.post0
 pytz==2024.1
-pywin32==306
 pyzmq==26.0.3
 scikit-learn==1.5.0
 scipy==1.14.0
