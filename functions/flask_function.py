@@ -14,10 +14,6 @@ CORS(app)
 # 创建 Mangum 处理器，使 Flask 应用适配 AWS Lambda
 handler = Mangum(app)
 
-# Netlify 会使用这个函数来调用 Flask 应用
-def handler_function(event, context):
-    return handler(event, context)
-
 # 玩家模型
 class Player(db.Model):
     id = db.Column(db.Integer, primary_key=True)
